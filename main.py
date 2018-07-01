@@ -50,7 +50,7 @@ def button_clicked():
         result.pack()
     except ValueError as e:
         result = Label(root, bg="blue", text="Введите цифровое значение", width = '200', fg='white')
-        result.pack()    
+        result.pack()
 
 
 root = Tk()
@@ -68,4 +68,6 @@ rbutton4.pack()
 button = Button(root, bg="red", fg='green', text="Преобразовать", command=button_clicked)
 button.pack()
 root.geometry('500x400+300+200')
-root.mainloop()
+
+if __name__ == "__main__":
+    root.mainloop()
